@@ -50,7 +50,7 @@ export default createStore({
         method: "GET",
       };
       const response = await fetch(
-        "http://127.0.0.1:8000/api/v1/invoices",
+        "https://razzydev.pythonanywhere.com/api/v1/invoices/",
         requestOptions
       );
       const data = await response.json();
@@ -84,7 +84,7 @@ export default createStore({
         body: data,
       };
       const response = await fetch(
-        "http://127.0.0.1:8000/api/v1/invoices/",
+        "https://razzydev.pythonanywhere.com/api/v1/invoices/",
         requestOptions
       );
       const res = await response.json();
@@ -99,7 +99,7 @@ export default createStore({
         method: "GET",
       };
       const response = await fetch(
-        `http://127.0.0.1:8000/api/v1/invoice/${payload}/`,
+        `https://razzydev.pythonanywhere.com/api/v1/invoices/${payload}/`,
         requestOptions
       );
       const data = await response.json();
@@ -117,7 +117,7 @@ export default createStore({
         body: raw,
       };
       const response = await fetch(
-        `http://127.0.0.1:8000/api/v1/invoice/${payload.id}/`,
+        `https://razzydev.pythonanywhere.com/api/v1/invoices/${payload.id}/`,
         requestOptions
       );
       const res = await response.json();
@@ -131,7 +131,7 @@ export default createStore({
         method: "DELETE",
       };
       const response = await fetch(
-        `http://127.0.0.1:8000/api/v1/invoice/${payload}/`,
+        `https://razzydev.pythonanywhere.com/api/v1/invoices/${payload}/`,
         requestOptions
       );
       const res = await response.json();
